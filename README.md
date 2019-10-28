@@ -1,0 +1,1 @@
+This program tracks your daily mood, noting any triggers. Mood trackers have been scientifically proven to be positive for mental health. The mood tracker also allows the user to record notes to track patterns. Additionally, in an effort to improve psychological health, there will be a daily gratefulness journal. 
