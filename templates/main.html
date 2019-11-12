@@ -2,10 +2,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" href="main_style.css">
+  <link rel="stylesheet" href="../static/main_style.css">
 </head>
 <body>
-  <h1>How are you feeling today?</h1>
 
   <form action='/journal' method='POST'>
     What are you grateful for today? <br>
@@ -13,5 +12,21 @@
     <input type="submit" value="submit"><br>
   </form>
 
-  
+  <form action='/mood_graph' method='POST'>
+    <h1>How are you feeling today?</h1><br>
+    <button type="button" class="button"></button>
+    <button type="button" class="button"></button>
+    <button type="button" class="button"></button>
+    <button type="button" class="button"></button>
+    <button type="button" class="button"></button>
+  </form>
+  <h1>Notes</h1>
+  <form action='/mood_graph' method='POST'>
+    <input type="text" name="notes"><br>
+    <input type="submit" value="submit"><br>
+  </form>
+
+  <br>
+  <button type="button">Mood Tracker</button>
+
 </body>

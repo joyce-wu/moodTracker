@@ -1,0 +1,11 @@
+.button {
+  display: block;
+  background-color: #eb9e34;
+  width: 33%;
+  height: 50px;
+  border: none;
+}
+
+.button:hover{
+  background-color: #ebae34;
+}
