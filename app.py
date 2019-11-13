@@ -1,9 +1,9 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, session, flash
+from utils import database
 import urllib2, json
 
 app = Flask(__name__)
-app.secret_key = os.urandom(32)
 
 ## homepage
 @app.route("/")
@@ -13,7 +13,7 @@ def start():
 ## mood graph over time
 @app.route("/mood_graph")
 def graph():
-    return render_template('moodgraph.html')
+    return render_template('moodgraph.html', mood = database.getMoods())
 
 ## gratitude journal
 @app.route("/journal")
