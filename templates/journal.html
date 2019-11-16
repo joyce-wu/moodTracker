@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="head">
+  Gratefulness Journal<br>
+</div>
+
+<table class="journal">
+  <tr>
+    <th>Date</th>
+    <th>Entry</th>
+  </tr>
+  {% for entry in journals %}
+  <tr>
+    <td> {{entry[0]}} </td>
+    <td> {{entry[1]}} </td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock body %}
